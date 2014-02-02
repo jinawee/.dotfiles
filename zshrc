@@ -101,5 +101,5 @@ bindkey '^L' push-line
 #ls after cd
 function chpwd() {
     emulate -L zsh
-    ls 
+    ls -a
     }
