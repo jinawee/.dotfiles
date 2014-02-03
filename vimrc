@@ -78,6 +78,9 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+"Decimal numbers
+set nrformats=
+
 au FocusLost * :wa
 
 inoremap jk <Esc> 
