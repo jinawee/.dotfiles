@@ -4,6 +4,7 @@
 "Pathogen
 execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
+
 syntax on
 filetype plugin on
 filetype indent on
@@ -13,8 +14,6 @@ set modelines=0
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
-" " Use 256 colours (Use this setting only if your terminal supports 256
-" colours)
 set t_Co=256
 "
 "Change tab behaviour
@@ -78,6 +77,9 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+"Paste mode with F12
+set pastetoggle=<F12>
+
 "Decimal numbers
 set nrformats=
 
@@ -85,6 +87,7 @@ au FocusLost * :wa
 
 inoremap jk <Esc> 
 
+"One character insert with space
 nmap <space> i <esc>r
 
 "Edit/reload vimrc
