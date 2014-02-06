@@ -103,3 +103,5 @@ function chpwd() {
     emulate -L zsh
     ls -a
     }
+
+source $HOME/.aliases
