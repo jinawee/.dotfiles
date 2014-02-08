@@ -86,6 +86,7 @@ set nrformats=
 au FocusLost * :wa
 
 inoremap jk <Esc> 
+"vmap jk <Esc>
 
 "One character insert with space
 nmap <space> i <esc>r
