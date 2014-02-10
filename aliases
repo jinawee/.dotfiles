@@ -1,3 +1,6 @@
+alias vim='vim -w ~/.vimlog "$@"'
+alias off='sudo poweroff'
+alias apti='sudo apt-get install'
 alias download='/media/eMachines/Users/Jinawee/Downloads/'
 alias clase='/media/eMachines/Users/Jinawee/Downloads/Clase\ 2013-2014/
 '
