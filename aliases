@@ -2,5 +2,6 @@ alias vim='vim -w ~/.vimlog "$@"'
 alias off='sudo poweroff'
 alias apti='sudo apt-get install'
 alias download='/media/eMachines/Users/Jinawee/Downloads/'
-alias clase='/media/eMachines/Users/Jinawee/Downloads/Clase\ 2013-2014/
-'
+alias clase='/media/eMachines/Users/Jinawee/Downloads/Clase\ 2013-2014/'
+alias capsl=" python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)' "
+
