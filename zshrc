@@ -76,6 +76,8 @@ bindkey -v
 #jk as ESC
 bindkey -M viins 'jk' vi-cmd-mode
 
+bindkey -a -s "daw" "bde"
+
 #search options
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
@@ -84,6 +86,8 @@ bindkey '^N' history-search-forward
 
 #ctrl+l to write new command
 bindkey '^L' push-line
+
+setopt CORRECT
 
 #fancy-ctrl-z () {
 #     emulate -LR zsh
