@@ -76,7 +76,7 @@ bindkey -v
 #jk as ESC
 bindkey -M viins 'jk' vi-cmd-mode
 
-bindkey -a -s "daw" "bde"
+#bindkey -a -s "daw" "bde"
 
 #search options
 bindkey '^R' history-incremental-search-backward

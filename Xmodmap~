@@ -13,3 +13,4 @@ keycode 50 = BackSpace
 keycode 66 = Shift_L
 keycode 135 = Caps_Lock
 
+keycode 92 = Backspace

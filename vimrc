@@ -80,6 +80,9 @@ inoremap <right> <nop>
 "Paste mode with F12
 set pastetoggle=<F12>
 
+"Add root permission
+cmap w!! w !sudo tee > /dev/null %
+
 "Decimal numbers
 set nrformats=
 
