@@ -97,3 +97,7 @@ nmap <space> i <esc>r
 "Edit/reload vimrc
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+"Swap directory
+set backupdir=./.backup,.,/tmp
+set directory=.,./.backup,/tmp

@@ -110,10 +110,13 @@ function chpwd() {
 
 source $HOME/.aliases
 
-terminfo_down_sc=$terminfo[cud1]$terminfo[cuu1]$terminfo[sc]$terminfo[cud1]
-function zle-line-init zle-keymap-select {
-    PS1_2="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    PS1="%{$terminfo_down_sc$PS1_2$terminfo[rc]%}%~ %# "
-    zle reset-prompt
-}
-preexec () { print -rn -- $terminfo[el]; }
+#terminfo_down_sc=$terminfo[cud1]$terminfo[cuu1]$terminfo[sc]$terminfo[cud1]
+#function zle-line-init zle-keymap-select {
+#    PS1_2="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#    PS1="%{$terminfo_down_sc$PS1_2$terminfo[rc]%}%~ %# "
+#    zle reset-prompt
+#}
+#preexec () { print -rn -- $terminfo[el]; }
+
+#Sort when du
+alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
