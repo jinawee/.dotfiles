@@ -94,6 +94,9 @@ inoremap jk <Esc>
 "One character insert with space
 nmap <space> i <esc>r
 
+"Clipboard system
+set clipboard=unnamedplus
+
 "Edit/reload vimrc
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>

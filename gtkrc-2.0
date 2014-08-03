@@ -1,0 +1,7 @@
+binding "gtk-binding-menu" {
+    bind "j" { "move-current" (next) }
+    bind "k" { "move-current" (prev) }
+    bind "h" { "move-current" (parent) }
+    bind "l" { "move-current" (child) }
+}
+class "GtkMenuShell" binding "gtk-binding-menu"
