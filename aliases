@@ -6,4 +6,3 @@ alias clrm=' sudo apt-get clean && sudo apt-get autoremove'
 alias download='/media/eMachines/Users/Jinawee/Downloads/'
 alias caps="python -c 'from ctypes import *; X11 = cdll.LoadLibrary(\"libX11.so.6\"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)' "
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
-alias hide='&>/dev/null & disown'
