@@ -9,13 +9,13 @@ syntax on
 filetype plugin on
 filetype indent on
 
-set nocompatible
-set modelines=0
+set nocompatible "Remove backwards compatibility
+set modelines=0  "Security reasons
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 set t_Co=256
-"
+
 "Change tab behaviour
 set tabstop=8
 set shiftwidth=4
@@ -48,7 +48,7 @@ set confirm
 
 let mapleader =","
 
-"Useful search option
+"Useful search options
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -57,9 +57,9 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
-nnoremap <leader><space> :noh<cr>
-"nnoremap <tab> %
-"vnoremap <tab> %
+nnoremap <leader><space> :noh<cr> 
+nnoremap <tab> %
+vnoremap <tab> %
 
 "Handle long lines
 set wrap
