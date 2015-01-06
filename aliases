@@ -1,3 +1,4 @@
+alias -g noui='&>/dev/null &disown'
 alias vim='vim -w ~/.vimlog "$@"'
 alias off='sudo poweroff'
 alias apti='sudo apt-get install'
@@ -5,5 +6,9 @@ alias update='sudo apt-get update'
 alias clrm=' sudo apt-get clean && sudo apt-get autoremove'
 alias caps="python -c 'from ctypes import *; X11 = cdll.LoadLibrary(\"libX11.so.6\"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)' "
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
+alias pdfcount=" for i in *pdf; do echo -n \"\$i: \";pdfinfo \"\$i\" |awk '/^Pages/ { print \$2}' ; done | awk '{s+=\$2 ; print} END{print \"Σ \" s}' "
 alias Clase=$Clase
 alias Downloads=$Downloads
+alias Optica=$Clase/Optica
+alias MMII=$Clase/MMII
+

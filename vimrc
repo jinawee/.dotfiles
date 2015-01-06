@@ -62,20 +62,20 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 "Handle long lines
-set wrap
-set textwidth=79
+"set wrap
+"set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
 "Only move with hjkl
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 
 "Paste mode with F12
 set pastetoggle=<F12>
@@ -94,6 +94,10 @@ inoremap jk <Esc>
 "One character insert with space
 nmap <space> i <esc>r
 
+"Insert blank line
+map <Enter> O<ESC>
+map <S-Enter> o<ESC>
+
 "Clipboard system
 set clipboard=unnamedplus
 
@@ -104,3 +108,4 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 "Swap directory
 set backupdir=./.backup,.,/tmp
 set directory=.,./.backup,/tmp
+
