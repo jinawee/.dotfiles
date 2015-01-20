@@ -108,8 +108,8 @@ function chpwd() {
     ls -a
     }
 
+#aliases location
 source $HOME/.aliases
-
 #terminfo_down_sc=$terminfo[cud1]$terminfo[cuu1]$terminfo[sc]$terminfo[cud1]
 #function zle-line-init zle-keymap-select {
 #    PS1_2="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
