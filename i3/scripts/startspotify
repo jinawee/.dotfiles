@@ -1,0 +1,1 @@
+i3-msg --no-startup-id 'workspace 4; exec /usr/bin/spotify-wrapper.sh'

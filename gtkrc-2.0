@@ -1,0 +1,14 @@
+binding "gtk-binding-menu" {
+    bind "j" { "move-current" (next) }
+    bind "k" { "move-current" (prev) }
+    bind "h" { "move-current" (parent) }
+    bind "l" { "move-current" (child) }
+}
+class "GtkMenuShell" binding "gtk-binding-menu"
+
+#gtk-theme-name = "MediterraneanLight"
+#gtk-font-name = "Open Sans 10"
+#gtk-icon-theme-name = "Faenza-Dark"
+#gtk-theme-name = "MediterraneanLight"
+#gtk-font-name = "Terminus 10"
+#gtk-icon-theme-name = "Faenza-Dark"
