@@ -108,7 +108,7 @@ nmap <space> i <esc>r
 
 "Insert blank line
 map <Enter> O<ESC>
-map <S-Enter> o<ESC>
+map <leader><Enter> o<ESC>
 "}}}
 
 "Copy/pasting{{{

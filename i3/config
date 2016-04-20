@@ -186,6 +186,7 @@ exec --no-startup-id gnome-sound-applet
 exec --no-startup-id dropbox start
 exec --no-startup-id ~/.i3/scripts/startxmod
 exec --no-startup-id numlockx on 
+exec --no-startup-id workrave on 
 #exec --no-startup-id xflux -l 43.5 -g 5.37
 
 #Bindings
@@ -209,8 +210,8 @@ bindsym Control+Right exec playerctl next
 bindsym Control+Left exec playerctl previous
 
 #Screenshots
-bindsym Print exec "scrot '%Y-%m-%d-%T.png' -e 'mv $f ~/Screenshots/' "
-bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Screenshots/'
+bindsym Print exec "scrot '%Y-%m-%d-%T.png' -e 'mv $f ~/.Screenshots/'; notify-send 'Recorded' -t 1 "
+bindsym --release Shift+Print exec "scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/.Screenshots/'; notify-send 'Recorded' -t 1 "
 
 #scratchpad
 # Mover ventana al scratchpad

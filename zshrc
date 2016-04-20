@@ -101,11 +101,11 @@ function chpwd() {
     }
 
 #fasd
-#eval "$(fasd --init posix-alias zsh-hook)"
+eval "$(fasd --init posix-alias zsh-hook)"
 eval `dircolors ~/bin/dircolors-solarized/dircolors.256dark`
 
 #aliases location
 source $HOME/.aliases
 
 
-export PATH="/home/jinawee/bin/anaconda2/bin:$PATH"
+#export PATH="/home/jinawee/bin/anaconda2/bin:$PATH"
