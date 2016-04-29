@@ -1,5 +1,6 @@
 alias -g noui='&>/dev/null &disown'
 alias vim='vim -w ~/.vimlog "$@"'
+alias v='vim'
 alias off='sudo poweroff'
 alias apti='sudo apt-get install'
 alias update='sudo apt-get update'
@@ -10,6 +11,6 @@ alias pdfcount=" for i in *pdf; do echo -n \"\$i: \";pdfinfo \"\$i\" |awk '/^Pag
 alias Clase=~/Documents/Clase
 alias Downloads=$Downloads
 alias physicslatex='evince /media/eMachines/Users/Jinawee/Downloads/Unix/Latex/physics.pdf'
-alias v='f -e vim'
-alias z='fasd_cd -di'
+#alias v='f -e vim'
+#alias z='fasd_cd -di'
 alias za='zathura'

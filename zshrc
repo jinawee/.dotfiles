@@ -101,7 +101,7 @@ function chpwd() {
     }
 
 #fasd
-eval "$(fasd --init posix-alias zsh-hook)"
+#eval "$(fasd --init posix-alias zsh-hook)"
 eval `dircolors ~/bin/dircolors-solarized/dircolors.256dark`
 
 #aliases location
