@@ -104,11 +104,14 @@ nnoremap k gk
 
 "Insert{{{
 "One character insert with space
-nmap <space> i <esc>r
+map <S-space> i <esc>r
+
 
 "Insert blank line
-map <Enter> O<ESC>
-map <leader><Enter> o<ESC>
+autocmd CmdwinEnter * nnoremap <CR> <CR>
+autocmd BufReadPost quickfix nnoremap <CR> <CR>
+noremap <Enter> o<ESC>
+noremap <space> O<ESC>
 "}}}
 
 "Copy/pasting{{{
@@ -119,6 +122,9 @@ set pastetoggle=<F12>
 set clipboard=unnamedplus
 "}}}
 
+noremap <leader>s  :set spell <CR>
+noremap <leader>S  :set nospell <CR>
+
 
 "let g:jedi#auto_initialization = 0
 autocmd FileType python setlocal completeopt-=preview
@@ -127,8 +133,8 @@ autocmd FileType python setlocal completeopt-=preview
 nnoremap gV `[v`]
 
 "Edit/reload vimrc
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>rv :so $MYVIMRC<CR>
+noremap <silent> <leader>ev :e $MYVIMRC<CR>
+noremap <silent> <leader>rv :so $MYVIMRC<CR>
 
 "Swap directory
 set backup
@@ -167,7 +173,7 @@ let g:rainbow_conf = {
 \	}
 \}
 
-nmap <leader>p :RainbowToggle <CR>
+noremap <leader>p :RainbowToggle <CR>
 "}}}
 
 "Syntastic{{{
