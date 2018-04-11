@@ -14,3 +14,4 @@ alias physicslatex='evince /media/eMachines/Users/Jinawee/Downloads/Unix/Latex/p
 #alias v='f -e vim'
 #alias z='fasd_cd -di'
 alias za='zathura'
+alias mv='mv -i'

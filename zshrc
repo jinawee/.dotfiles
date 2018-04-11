@@ -52,7 +52,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/opt/texbin:/home/jinawee/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/jinawee/anaconda/bin"
+export PATH="/opt/texbin:/home/john/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/john/anaconda/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -101,11 +101,36 @@ function chpwd() {
     }
 
 #fasd
-#eval "$(fasd --init posix-alias zsh-hook)"
+eval "$(fasd --init posix-alias zsh-hook)"
 eval `dircolors ~/bin/dircolors-solarized/dircolors.256dark`
 
 #aliases location
 source $HOME/.aliases
 
 
-#export PATH="/home/jinawee/bin/anaconda2/bin:$PATH"
+export PATH="/home/jinawee/bin/anaconda2/bin:$PATH"
+export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH    
+export INFOPATH=$INFOPATH:/usr/local/texlive/2017/texmf-dist/doc/info
+export MANPATH=$MANPATH:/usr/local/texlive/2017/texmf-dist/doc/man
+
+#bindkey -v
+#
+#bindkey '^P' up-history
+#bindkey '^N' down-history
+#bindkey '^?' backward-delete-char
+#bindkey '^h' backward-delete-char
+#bindkey '^w' backward-kill-word
+#bindkey '^r' history-incremental-search-backward
+
+precmd() { RPROMPT="" }
+function zle-line-init zle-keymap-select {
+   VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+   RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+   zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+#export KEYTIMEOUT=1
+
